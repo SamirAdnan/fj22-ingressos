@@ -9,6 +9,12 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
+	<developers>
+		<developer>
+			<name>Luiz Augusto Gonçalves Flores</name>
+			<email>lagflores@yahoo.com.br</email>
+		</developer>
+	</developers>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
