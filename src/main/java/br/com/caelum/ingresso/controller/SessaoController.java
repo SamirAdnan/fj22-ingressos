@@ -24,7 +24,7 @@ public class SessaoController {
 		modelAndView.addObject("sala", salaDao.findOne(salaId));
 		modelAndView.addObject("filme", filmeDao.findAll());
 		
-		rerturn modelAndView;
+		return modelAndView;
 		
 	}
 	
