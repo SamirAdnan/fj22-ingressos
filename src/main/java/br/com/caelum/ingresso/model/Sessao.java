@@ -16,6 +16,12 @@ public class Sessao {
 	@ManyToOne
 	private Filme filme;
 
+	/**
+	 * @deprecated apenas para o Hybernate
+	 */
+	public Sessao() {
+		// TODO Auto-generated constructor stub
+	}
 	
 	public Sessao (LocalTime horario, Filme filme, Sala sala){
 		this.horario = horario;
