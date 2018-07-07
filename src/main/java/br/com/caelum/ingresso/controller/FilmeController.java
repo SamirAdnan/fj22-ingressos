@@ -95,7 +95,9 @@ public class FilmeController {
         ModelAndView modelAndView = new ModelAndView("filme/detalhe");
 
         Filme filme = filmeDao.findOne(id);
+        
         List<Sessao> sessoes = sessaoDao.buscaSessoesDoFilme(filme);
+        
         modelAndView.addObject("sessoes", sessoes);
 
         return modelAndView;
