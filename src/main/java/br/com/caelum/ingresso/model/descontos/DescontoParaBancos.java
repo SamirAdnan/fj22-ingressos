@@ -5,6 +5,11 @@ package br.com.caelum.ingresso.model.descontos;
 	public class DescontoParaBancos implements Desconto {
 	
 		@Override
+		public String getDescricao() {
+			return "Desconto Banco";
+		}
+		
+		@Override
 		public BigDecimal aplicarDescontoSobre(BigDecimal precoOriginal) {
 			return precoOriginal.subtract(trintaPorCentoSobre(precoOriginal));
 		}
@@ -13,4 +18,5 @@ package br.com.caelum.ingresso.model.descontos;
 			return precoOriginal.multiply(new BigDecimal("0.3"));
 		}
 
+		
 }
